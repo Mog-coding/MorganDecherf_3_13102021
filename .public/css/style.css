@@ -1,3 +1,8 @@
+/*2 base*/
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -6,9 +11,98 @@ h1, h3 {
   font-family: "Shrikhand", cursive;
 }
 
+/********************/
+/******************** GLOBAL ********************/
+/********************/
+body {
+  margin: 0;
+}
+
+/********************/
+/******************** BLOC PAGE ********************/
+/********************/
+/*#main_wrapper {}*/
+/********************/
+/******************** HEADER ********************/
+/********************/
+header h1 {
+  margin: 10px 0px 7px 0px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+/*********** position ***********/
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  /* border-top: 1px solid rgb(207, 207, 207); */
+  height: 50px;
+}
+
+.position i {
+  margin-right: 18px;
+}
+
+.position span {
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+/********************/
+/******************** MAIN ********************/
+/********************/
+/*********** SECTION 1 ***********/
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 205px;
+  padding: 40px 35px;
+  background-color: gainsboro;
+}
+
+.reservation h2,
+.reservation div {
+  text-align: center;
+}
+
+.reservation h2 {
+  margin: 0px 0px;
+}
+
+.reservation div {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.bouton-explorer {
+  height: 50px;
+  width: 218px;
+  margin-bottom: 20px;
+  background-color: #9356DC;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
 img {
   width: 100px;
   height: 100px;
+}
+
+/*********** SECTION 2 ***********/
+.filtres div {
+  display: flex;
+  justify-content: center;
+  height: 73px;
+  width: 322px;
+  background-color: grey;
+  /* rgb(246, 246, 246)*/
 }
 
 /*# sourceMappingURL=style.css.map */
