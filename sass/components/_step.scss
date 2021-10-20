@@ -1,0 +1,10 @@
+@import "../abstracts/mixins";
+
+.filtres {
+    @include flex(flex-start, center);
+    position: relative;
+    height: 71px;
+    min-width: 322px;
+    border-radius: 22px;
+    background-color: gainsboro; /* rgb(246, 246, 246)*/
+  }

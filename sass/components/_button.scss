@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+.main-button {
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: $primary-color;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+  }

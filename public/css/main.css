@@ -88,18 +88,6 @@ header h1 {
   margin-bottom: 10px;
 }
 
-.bouton-explorer {
-  height: 50px;
-  width: 218px;
-  margin-bottom: 20px;
-  background-color: #9356dc;
-  border-radius: 30px;
-  border: none;
-  color: white;
-  font-size: 0.9em;
-  font-weight: bold;
-}
-
 /*********** SECTION 2 ***********/
 .section-filtres h2 {
   margin: 46px 0px 0px 20px;
@@ -112,18 +100,6 @@ header h1 {
   align-items: center;
   height: 265px;
   padding: 30px 20px 68px 20px;
-}
-
-.filtres {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  height: 71px;
-  min-width: 322px;
-  border-radius: 22px;
-  background-color: gainsboro;
-  /* rgb(246, 246, 246)*/
 }
 
 .filtres span {
@@ -227,4 +203,4 @@ nav a {
   margin-bottom: 6px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
