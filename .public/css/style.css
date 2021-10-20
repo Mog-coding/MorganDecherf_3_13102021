@@ -92,7 +92,7 @@ header h1 {
   height: 50px;
   width: 218px;
   margin-bottom: 20px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 30px;
   border: none;
   color: white;
@@ -148,7 +148,7 @@ header h1 {
   position: absolute;
   left: -12px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
 }
 
@@ -210,6 +210,21 @@ header h1 {
 footer {
   color: white;
   background-color: #353535;
+  padding: 25px;
+}
+
+footer h3 {
+  margin: 0px 0px 14px 0px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: white;
+  margin-bottom: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */

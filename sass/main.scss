@@ -1,31 +1,29 @@
 /*2 base*/
-@import 
-    './base/base',
-    './base/font';
+@import "./base/base", "./base/font";
 
 /********************/
 /******************** GLOBAL ********************/
 /********************/
-  body {
-    margin: 0;
-  }
-  
+body {
+  margin: 0;
+}
+
 /********************/
 /******************** BLOC PAGE ********************/
 /********************/
-  /*#main_wrapper {}*/
+/*#main_wrapper {}*/
 
 /********************/
 /******************** HEADER ********************/
 /********************/
-header h1{
-    margin: 10px 0px 7px 0px;
-    text-align: center;
-    font-size: 1.8em;
- }
+header h1 {
+  margin: 10px 0px 7px 0px;
+  text-align: center;
+  font-size: 1.8em;
+}
 
 /*********** position ***********/
-.position{
+.position {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,10 +31,10 @@ header h1{
   /* border-top: 1px solid rgb(207, 207, 207); */
   height: 50px;
 }
-.position i{
-  margin-right: 18px; 
+.position i {
+  margin-right: 18px;
 }
-.position span{
+.position span {
   margin-top: 3px;
   font-weight: bold;
 }
@@ -45,7 +43,7 @@ header h1{
 /********************/
 
 /*********** SECTION 1 ***********/
-.reservation{
+.reservation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,21 +53,21 @@ header h1{
   background-color: rgb(246, 246, 246); /* rgb(246, 246, 246)*/
 }
 .reservation h2,
-.reservation div{
+.reservation div {
   text-align: center;
 }
-.reservation h2{
+.reservation h2 {
   margin: 0px 0px;
 }
-.reservation div{
+.reservation div {
   font-size: 1.1em;
   margin-bottom: 10px;
 }
-.bouton-explorer{
+.bouton-explorer {
   height: 50px;
   width: 218px;
   margin-bottom: 20px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 30px;
   border: none;
   color: white;
@@ -78,10 +76,10 @@ header h1{
 }
 
 /*********** SECTION 2 ***********/
-.section-filtres h2{
+.section-filtres h2 {
   margin: 46px 0px 0px 20px;
 }
-.container-filtres{
+.container-filtres {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,7 +87,7 @@ header h1{
   height: 265px;
   padding: 30px 20px 68px 20px;
 }
-.filtres{
+.filtres {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -99,17 +97,17 @@ header h1{
   border-radius: 22px;
   background-color: gainsboro; /* rgb(246, 246, 246)*/
 }
-.filtres span{
+.filtres span {
   font-weight: bold;
 }
-.icone-filtres{
+.icone-filtres {
   width: 40px;
   margin-left: 33px;
 }
-.icone-filtres  i{
+.icone-filtres i {
   font-size: 1.15em;
 }
-.nombre-filtres{
+.nombre-filtres {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,50 +116,49 @@ header h1{
   position: absolute;
   left: -12px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
 }
 
 /*********** SECTION 3 ***********/
-.section-cards{
+.section-cards {
   background-color: gainsboro;
 }
-.section-cards h2{
+.section-cards h2 {
   padding: 52px 0px 0px 20px;
   margin: 0px;
 }
-.container-cards{
+.container-cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 1058px;
   padding: 22px 20px 64px 20px;
-  
 }
-.cards{
+.cards {
   height: 250px;
   width: 100%;
   background-color: white;
   border-radius: 16px;
 }
-.cards img{
+.cards img {
   height: 174px;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
-.legende-cards{
+.legende-cards {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
 }
-.texte-legende{
+.texte-legende {
   margin: 13px 0px 0px 14px;
 }
-.legende-cards p{
+.legende-cards p {
   font-weight: normal;
   margin: 4px 0px 0px 0px;
 }
-.legende-cards i{
+.legende-cards i {
   font-size: 1.4em;
   margin-top: 20px;
   margin-right: 20px;
@@ -170,8 +167,19 @@ header h1{
 /********************/
 /******************** FOOTER ********************/
 /********************/
-
-footer{
+footer {
   color: white;
-  background-color: rgb(53, 53, 53)
+  background-color: rgb(53, 53, 53);
+  padding: 25px;
+}
+footer h3 {
+  margin: 0px 0px 14px 0px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  color: white;
+  margin-bottom: 6px;
 }
