@@ -3,6 +3,15 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  object-fit: cover;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -91,11 +100,6 @@ header h1 {
   font-weight: bold;
 }
 
-img {
-  width: 100px;
-  height: 100px;
-}
-
 /*********** SECTION 2 ***********/
 .section-filtres h2 {
   margin: 46px 0px 0px 20px;
@@ -107,7 +111,7 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 265px;
-  padding: 30px 20px 65px 20px;
+  padding: 30px 20px 68px 20px;
 }
 
 .filtres {
@@ -145,16 +149,67 @@ img {
   left: -12px;
   border-radius: 50%;
   background-color: #9356DC;
+  color: white;
 }
 
-.relative-filtres span {
+/*********** SECTION 3 ***********/
+.section-cards {
+  background-color: gainsboro;
+}
+
+.section-cards h2 {
+  padding: 52px 0px 0px 20px;
+  margin: 0px;
+}
+
+.container-cards {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 17px;
-  background-color: #9356DC;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1058px;
+  padding: 22px 20px 64px 20px;
+}
+
+.cards {
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.cards img {
+  height: 174px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.legende-cards {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.texte-legende {
+  margin: 13px 0px 0px 14px;
+}
+
+.legende-cards p {
+  font-weight: normal;
+  margin: 4px 0px 0px 0px;
+}
+
+.legende-cards i {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/********************/
+/******************** FOOTER ********************/
+/********************/
+footer {
+  color: white;
+  background-color: #353535;
 }
 
 /*# sourceMappingURL=style.css.map */
