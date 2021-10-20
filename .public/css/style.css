@@ -61,7 +61,8 @@ header h1 {
   align-items: center;
   height: 205px;
   padding: 40px 35px;
-  background-color: gainsboro;
+  background-color: #f6f6f6;
+  /* rgb(246, 246, 246)*/
 }
 
 .reservation h2,
@@ -96,13 +97,64 @@ img {
 }
 
 /*********** SECTION 2 ***********/
-.filtres div {
+.section-filtres h2 {
+  margin: 46px 0px 0px 20px;
+}
+
+.container-filtres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 265px;
+  padding: 30px 20px 65px 20px;
+}
+
+.filtres {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 71px;
+  min-width: 322px;
+  border-radius: 22px;
+  background-color: gainsboro;
+  /* rgb(246, 246, 246)*/
+}
+
+.filtres span {
+  font-weight: bold;
+}
+
+.icone-filtres {
+  width: 40px;
+  margin-left: 33px;
+}
+
+.icone-filtres i {
+  font-size: 1.15em;
+}
+
+.nombre-filtres {
   display: flex;
   justify-content: center;
-  height: 73px;
-  width: 322px;
-  background-color: grey;
-  /* rgb(246, 246, 246)*/
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -12px;
+  border-radius: 50%;
+  background-color: #9356DC;
+}
+
+.relative-filtres span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 17px;
+  background-color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
