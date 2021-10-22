@@ -1,6 +1,11 @@
+/*1 abstract*/
 /*2 base*/
 html {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
 }
 
 a {
@@ -20,20 +25,7 @@ h1, h3 {
   font-family: "Shrikhand", cursive;
 }
 
-/********************/
-/******************** GLOBAL ********************/
-/********************/
-body {
-  margin: 0px;
-}
-
-/********************/
-/******************** BLOC PAGE ********************/
-/********************/
-/*#main_wrapper {}*/
-/********************/
-/******************** HEADER ********************/
-/********************/
+/*4 layout*/
 header div {
   margin: 15px 0px 7px 0px;
   text-align: center;
@@ -45,13 +37,44 @@ header img {
   object-fit: contain;
 }
 
+footer {
+  background-color: #353535;
+  padding: 25px 25px 30px 25px;
+}
+
+footer img {
+  height: 18px;
+  width: 98px;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
+  margin-bottom: 17px;
+}
+
+.footer-icons {
+  display: inline-block;
+  width: 18px;
+}
+
+footer i {
+  font-size: 0.7em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: white;
+  margin-bottom: 6px;
+}
+
 /*********** position ***********/
 .position {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
-  /* border-top: 1px solid rgb(207, 207, 207); */
   height: 50px;
   box-shadow: inset 0px 6px 10px -5px #b4b4b4;
 }
@@ -76,7 +99,7 @@ header img {
 /********************/
 /******************** MAIN ********************/
 /********************/
-/*********** SECTION 1 ***********/
+/*********** SECTION 1 RESERVATION ***********/
 .reservation {
   display: flex;
   flex-direction: column;
@@ -85,7 +108,6 @@ header img {
   height: 205px;
   padding: 40px 35px;
   background-color: #f6f6f6;
-  /* rgb(246, 246, 246)*/
 }
 
 .reservation h2,
@@ -106,7 +128,7 @@ header img {
   height: 50px;
   width: 218px;
   margin-bottom: 20px;
-  background: linear-gradient(175deg, #FF79DA, 50%, #9356dc);
+  background: linear-gradient(175deg, #FF79DA, 50%, #9356DC);
   border-radius: 30px;
   border: none;
   color: white;
@@ -131,6 +153,7 @@ header img {
 
 .step {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   position: relative;
@@ -157,11 +180,11 @@ header img {
   position: absolute;
   left: -12px;
   border-radius: 50%;
-  background-color: #9356dc;
+  background-color: #9356DC;
   color: white;
 }
 
-/*********** SECTION 3 ***********/
+/*********** SECTION 3 CARDS ***********/
 .section-cards {
   background-color: #f6f6f6;
 }
@@ -175,6 +198,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
   height: 1058px;
   padding: 22px 20px 64px 20px;
 }
@@ -211,55 +235,20 @@ header img {
 }
 
 .button-nouveau {
-  position: absolute;
-  top: 13px;
-  right: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 13px;
+  right: 12px;
   height: 29px;
   width: 80px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #008766;
   border: none;
   border-radius: 3px;
   font-weight: bold;
   font-size: 0.8em;
-}
-
-/********************/
-/******************** FOOTER ********************/
-/********************/
-footer {
-  background-color: #353535;
-  padding: 25px 25px 30px 25px;
-}
-
-footer img {
-  height: 18px;
-  width: 98px;
-  object-fit: contain;
-  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
-  margin-bottom: 17px;
-}
-
-.footer-icons {
-  display: inline-block;
-  width: 18px;
-}
-
-footer i {
-  font-size: 0.7em;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-nav a {
-  color: white;
-  margin-bottom: 6px;
 }
 
 /*# sourceMappingURL=main.css.map */
