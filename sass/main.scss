@@ -5,7 +5,7 @@
 /******************** GLOBAL ********************/
 /********************/
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 /********************/
@@ -16,10 +16,14 @@ body {
 /********************/
 /******************** HEADER ********************/
 /********************/
-header h1 {
-  margin: 10px 0px 7px 0px;
+header div {
+  margin: 15px 0px 7px 0px;
   text-align: center;
-  font-size: 1.8em;
+}
+header img {
+  height: 30px;
+  width: 164px;
+  object-fit: contain;
 }
 
 /*********** position ***********/
@@ -30,14 +34,23 @@ header h1 {
   background-color: rgb(234, 234, 234);
   /* border-top: 1px solid rgb(207, 207, 207); */
   height: 50px;
+  box-shadow: inset 0px 6px 10px -5px rgb(180, 180, 180);
 }
 .position i {
-  margin-right: 18px;
+  margin: 0px 18px 0px 35px;
 }
-.position span {
+.position input{
+  outline: none;
+  border: none;
   margin-top: 3px;
-  font-weight: bold;
+  background-color: rgb(234, 234, 234);
 }
+.position input::placeholder{
+  font-size: 1.1em;
+  font-weight: bold;
+  color: black;
+}
+
 /********************/
 /******************** MAIN ********************/
 /********************/
@@ -67,19 +80,20 @@ header h1 {
   height: 50px;
   width: 218px;
   margin-bottom: 20px;
-  background-color: #9356dc;
+  background: linear-gradient(175deg,#FF79DA, 50%, #9356dc);
   border-radius: 30px;
   border: none;
   color: white;
   font-size: 0.9em;
   font-weight: bold;
+  box-shadow: 3px 5px 7px rgb( 196, 196, 196);
 }
 
-/*********** SECTION 2 ***********/
-.section-filtres h2 {
+/*********** SECTION 2 STEP ***********/
+.section-step h2 {
   margin: 46px 0px 0px 20px;
 }
-.container-filtres {
+.container-step {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,7 +101,7 @@ header h1 {
   height: 265px;
   padding: 30px 20px 68px 20px;
 }
-.filtres {
+.step {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -95,34 +109,33 @@ header h1 {
   height: 71px;
   min-width: 322px;
   border-radius: 22px;
-  background-color: gainsboro; /* rgb(246, 246, 246)*/
-}
-.filtres span {
-  font-weight: bold;
-}
-.icone-filtres {
-  width: 40px;
-  margin-left: 33px;
-}
-.icone-filtres i {
-  font-size: 1.15em;
-}
-.nombre-filtres {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  left: -12px;
-  border-radius: 50%;
-  background-color: #9356dc;
-  color: white;
+  background-color: rgb(246, 246, 246); 
+  box-shadow: 3px 5px 7px rgb( 220, 220, 220);
+  &__title {
+    font-weight: bold;
+  }
+  &__icons {
+    width: 40px;
+    margin-left: 33px;
+    font-size: 1.15em;
+  }
+  &__numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -12px;
+    border-radius: 50%;
+    background-color: #9356dc;
+    color: white;
+  }
 }
 
 /*********** SECTION 3 ***********/
 .section-cards {
-  background-color: gainsboro;
+  background-color: rgb( 246, 246, 246);
 }
 .section-cards h2 {
   padding: 52px 0px 0px 20px;
@@ -138,42 +151,71 @@ header h1 {
 .cards {
   height: 250px;
   width: 100%;
+  position: relative;
   background-color: white;
   border-radius: 16px;
+  box-shadow: 3px 5px 7px rgb( 230, 230, 230);
+  &__image {
+      height: 174px;
+      width: 100%;
+      border-radius: 15px 15px 0px 0px;
+      }
+  &__container-legend {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      }
+  &__legend-text {
+      margin: 13px 0px 0px 14px;
+      }
+  &__legend-p {
+      font-weight: normal;
+      margin: 4px 0px 0px 0px;
+      }
+  &__legend-i {
+      font-size: 1.4em;
+      margin-top: 20px;
+      margin-right: 20px;
+      }
 }
-.cards img {
-  height: 174px;
-  width: 100%;
-  border-radius: 15px 15px 0px 0px;
-}
-.legende-cards {
+
+.button-nouveau{
+  position: absolute;
+  top: 13px;
+  right: 12px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 29px;
+  width: 80px;
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  border: none;
+  border-radius: 3px;
   font-weight: bold;
-}
-.texte-legende {
-  margin: 13px 0px 0px 14px;
-}
-.legende-cards p {
-  font-weight: normal;
-  margin: 4px 0px 0px 0px;
-}
-.legende-cards i {
-  font-size: 1.4em;
-  margin-top: 20px;
-  margin-right: 20px;
+  font-size: 0.8em;
 }
 
 /********************/
 /******************** FOOTER ********************/
 /********************/
 footer {
-  color: white;
   background-color: rgb(53, 53, 53);
-  padding: 25px;
+  padding: 25px 25px 30px 25px;
 }
-footer h3 {
-  margin: 0px 0px 14px 0px;
+footer img{
+  height: 18px;
+  width: 98px;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
+  margin-bottom: 17px;
+}
+.footer-icons{
+  display: inline-block;
+  width: 18px;
+}
+footer i{
+  font-size: 0.7em;
 }
 nav {
   display: flex;
