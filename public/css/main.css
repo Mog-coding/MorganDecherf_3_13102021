@@ -25,6 +25,17 @@ h1, h3 {
   font-family: "Shrikhand", cursive;
 }
 
+/*3 components*/
+.bouton-gradient {
+  background: linear-gradient(175deg, #FF79DA, 50%, #9356DC);
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 3px 5px 7px #c4c4c4;
+}
+
 /*4 layout*/
 header div {
   margin: 15px 0px 7px 0px;
@@ -69,6 +80,7 @@ nav a {
   margin-bottom: 6px;
 }
 
+/*5 page*/
 /*********** position ***********/
 .position {
   display: flex;
@@ -128,13 +140,6 @@ nav a {
   height: 50px;
   width: 218px;
   margin-bottom: 20px;
-  background: linear-gradient(175deg, #FF79DA, 50%, #9356DC);
-  border-radius: 30px;
-  border: none;
-  color: white;
-  font-size: 0.9em;
-  font-weight: bold;
-  box-shadow: 3px 5px 7px #c4c4c4;
 }
 
 /*********** SECTION 2 STEP ***********/
@@ -209,7 +214,7 @@ nav a {
   position: relative;
   background-color: white;
   border-radius: 16px;
-  box-shadow: 3px 5px 7px #e6e6e6;
+  box-shadow: 3px 5px 7px #eaeaea;
 }
 .cards__image {
   height: 174px;
@@ -224,7 +229,7 @@ nav a {
 .cards__legend-text {
   margin: 13px 0px 0px 14px;
 }
-.cards__legend-p {
+.cards__legend-text p {
   font-weight: normal;
   margin: 4px 0px 0px 0px;
 }
