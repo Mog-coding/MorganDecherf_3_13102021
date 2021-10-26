@@ -1,0 +1,95 @@
+/*1 abstract*/
+@import "./abstracts/variables", "./abstracts/mixins";
+/*2 base*/
+@import "./base/base";
+/*3 components*/
+@import "./components/style-cards-menu";
+@import "./components/button-gradient";
+/*4 layout*/
+body {
+  font-family: $main-font, sans-serif;
+}
+
+/* layout header */
+@import "./layout/header";
+
+.img-restaurant {
+  position: relative;
+  height: 218px;
+  width: 100%;
+}
+.img-restaurant img {
+  height: 270px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/*** MAIN ***/
+main {
+  padding: 33px 12px 83px 11px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 38px 38px 0px 0px;
+}
+.container-h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+h1 {
+  font-family: $title-font, cursive;
+  margin: 0px 0px 4px 10px;
+  font-size: 1.67em;
+}
+.container-h1 i {
+  font-size: 1.5em;
+  padding-right: 26px;
+}
+h2 {
+  font-weight: normal;
+  font-size: 1.05em;
+  margin: 25px 0px 14px 9px;
+}
+h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 42px;
+  background-color: $tertiary-color;
+  margin-top: 5px;
+}
+.container-cards {
+  display: flex;
+  flex-direction: column;
+}
+.cards-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  margin-bottom: 14px;
+  padding-left: 11px;
+  padding-right: 22px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.cards-menu__legende p {
+  font-weight: normal;
+  font-size: 0.85em;
+  margin: 3px 0px 0px 0px;
+}
+.cards-menu__price {
+  font-size: 0.8em;
+  padding-top: 18px;
+}
+
+.button-commande {
+  @include flex-center;
+  margin: auto;
+  margin-top: 36px;
+  height: 50px;
+  width: 186px;
+}
+
+/* layout footer */
+@import "./layout/footer";
