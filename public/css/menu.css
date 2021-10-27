@@ -1,3 +1,4 @@
+/********* IMPORTS *********/
 /*1 abstract*/
 /*2 base*/
 html {
@@ -56,11 +57,6 @@ img {
 }
 
 /*4 layout*/
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-/* layout header */
 .logo {
   margin: 15px 0px 7px 0px;
   text-align: center;
@@ -70,6 +66,43 @@ header img {
   height: 30px;
   width: 164px;
   object-fit: contain;
+}
+
+footer {
+  background-color: #353535;
+  padding: 25px 25px 30px 25px;
+}
+
+footer img {
+  height: 18px;
+  width: 98px;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
+  margin-bottom: 17px;
+}
+
+.footer-icons {
+  display: inline-block;
+  width: 18px;
+}
+
+footer i {
+  font-size: 0.7em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: white;
+  margin-bottom: 6px;
+}
+
+/*5 pages*/
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -157,39 +190,6 @@ h2::after {
   margin-top: 36px;
   height: 50px;
   width: 186px;
-}
-
-/* layout footer */
-footer {
-  background-color: #353535;
-  padding: 25px 25px 30px 25px;
-}
-
-footer img {
-  height: 18px;
-  width: 98px;
-  object-fit: contain;
-  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
-  margin-bottom: 17px;
-}
-
-.footer-icons {
-  display: inline-block;
-  width: 18px;
-}
-
-footer i {
-  font-size: 0.7em;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-nav a {
-  color: white;
-  margin-bottom: 6px;
 }
 
 /*# sourceMappingURL=menu.css.map */

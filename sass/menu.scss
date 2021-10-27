@@ -1,3 +1,4 @@
+/********* IMPORTS *********/
 /*1 abstract*/
 @import "./abstracts/variables", "./abstracts/mixins";
 /*2 base*/
@@ -6,85 +7,6 @@
 @import "./components/cards-menu", "./components/style-cards-menu",
   "./components/button-gradient";
 /*4 layout*/
-body {
-  font-family: $main-font, sans-serif;
-}
-
-/* layout header */
-@import "./layout/header";
-
-header {
-  display: flex;
-  justify-content: space-between;
-}
-.arrow {
-  @include flex-center;
-  width: 63px;
-  font-size: 1.15em;
-  padding-top: 3px;
-}
-.logo {
-  margin: 21px 0px 7px 0px;
-}
-.center {
-  width: 63px;
-}
-.img-restaurant {
-  position: relative;
-  height: 218px;
-  width: 100%;
-}
-.img-restaurant img {
-  height: 270px;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-/********* MAIN *********/
-main {
-  padding: 33px 12px 83px 11px;
-  background-color: rgb(246, 246, 246);
-  border-radius: 38px 38px 0px 0px;
-}
-.container-h1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  & i {
-    font-size: 1.5em;
-    padding-right: 26px;
-  }
-}
-h1 {
-  font-family: $title-font, cursive;
-  margin: 0px 0px 4px 10px;
-  font-size: 1.67em;
-}
-h2 {
-  font-weight: normal;
-  font-size: 1.05em;
-  margin: 25px 0px 14px 9px;
-  &::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 42px;
-    background-color: $tertiary-color;
-    margin-top: 5px;
-  }
-}
-.container-cards {
-  display: flex;
-  flex-direction: column;
-}
-.button-commande {
-  @include flex-center;
-  margin: auto;
-  margin-top: 36px;
-  height: 50px;
-  width: 186px;
-}
-
-/* layout footer */
-@import "./layout/footer";
+@import "./layout/header", "./layout/footer";
+/*5 pages*/
+@import "./pages/menupage.scss";
