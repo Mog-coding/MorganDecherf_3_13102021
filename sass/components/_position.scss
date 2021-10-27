@@ -1,0 +1,20 @@
+.position {
+  @include flex-center;
+  background-color: $fifth-color;
+  height: 50px;
+  box-shadow: inset 0px 6px 10px -5px rgb(180, 180, 180);
+  & i {
+    margin: 0px 18px 0px 35px;
+  }
+  & input {
+    outline: none;
+    border: none;
+    margin-top: 3px;
+    background-color: $fifth-color;
+  }
+  & input::placeholder {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+  }
+}

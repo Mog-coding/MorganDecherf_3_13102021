@@ -13,11 +13,11 @@ body {
 /* layout header */
 @import "./layout/header";
 
-header{
+header {
   display: flex;
   justify-content: space-between;
 }
-.arrow{
+.arrow {
   @include flex-center;
   width: 63px;
   font-size: 1.15em;
@@ -26,7 +26,7 @@ header{
 .logo {
   margin: 21px 0px 7px 0px;
 }
-.center{
+.center {
   width: 63px;
 }
 
@@ -99,7 +99,6 @@ h2::after {
   font-size: 0.8em;
   padding-top: 18px;
 }
-
 .button-commande {
   @include flex-center;
   margin: auto;
