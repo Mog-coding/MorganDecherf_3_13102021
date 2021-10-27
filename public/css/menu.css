@@ -18,6 +18,27 @@ img {
 }
 
 /*3 components*/
+.cards-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  margin-bottom: 14px;
+  padding-left: 11px;
+  padding-right: 22px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.cards-menu__legende p {
+  font-weight: normal;
+  font-size: 0.85em;
+  margin: 3px 0px 0px 0px;
+}
+.cards-menu__price {
+  font-size: 0.8em;
+  padding-top: 18px;
+}
+
 .style-card-menu {
   background-color: white;
   box-shadow: 0 3px 5px 2px #e6e6e6;
@@ -86,7 +107,7 @@ header {
   z-index: -1;
 }
 
-/*** MAIN ***/
+/********* MAIN *********/
 main {
   padding: 33px 12px 83px 11px;
   background-color: #f6f6f6;
@@ -98,6 +119,10 @@ main {
   justify-content: space-between;
   align-items: baseline;
 }
+.container-h1 i {
+  font-size: 1.5em;
+  padding-right: 26px;
+}
 
 h1 {
   font-family: "Shrikhand", cursive;
@@ -105,17 +130,11 @@ h1 {
   font-size: 1.67em;
 }
 
-.container-h1 i {
-  font-size: 1.5em;
-  padding-right: 26px;
-}
-
 h2 {
   font-weight: normal;
   font-size: 1.05em;
   margin: 25px 0px 14px 9px;
 }
-
 h2::after {
   content: "";
   display: block;
@@ -128,29 +147,6 @@ h2::after {
 .container-cards {
   display: flex;
   flex-direction: column;
-}
-
-.cards-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 67px;
-  margin-bottom: 14px;
-  padding-left: 11px;
-  padding-right: 22px;
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
-.cards-menu__legende p {
-  font-weight: normal;
-  font-size: 0.85em;
-  margin: 3px 0px 0px 0px;
-}
-
-.cards-menu__price {
-  font-size: 0.8em;
-  padding-top: 18px;
 }
 
 .button-commande {

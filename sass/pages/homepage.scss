@@ -36,15 +36,15 @@
   padding: 30px 20px 68px 20px;
 }
 
-/*********** SECTION 3 cardsHome ***********/
-.section-cardsHome {
+/*********** SECTION 3 cards-home ***********/
+.section-cards-home {
   background-color: $fourth-color;
 }
-.section-cardsHome h2 {
+.section-cards-home h2 {
   padding: 52px 0px 0px 20px;
   margin: 0px;
 }
-.container-cardsHome {
+.container-cards-home {
   @include flex(column, space-between, stretch);
   height: 1058px;
   padding: 22px 20px 64px 20px;
