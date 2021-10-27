@@ -33,7 +33,7 @@ body {
 }
 
 /*4 layout*/
-header div {
+.logo {
   margin: 15px 0px 7px 0px;
   text-align: center;
 }

@@ -40,7 +40,7 @@ body {
 }
 
 /* layout header */
-header div {
+.logo {
   margin: 15px 0px 7px 0px;
   text-align: center;
 }
@@ -49,6 +49,28 @@ header img {
   height: 30px;
   width: 164px;
   object-fit: contain;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  font-size: 1.15em;
+  padding-top: 3px;
+}
+
+.logo {
+  margin: 21px 0px 7px 0px;
+}
+
+.center {
+  width: 63px;
 }
 
 .img-restaurant {

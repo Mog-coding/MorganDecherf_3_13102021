@@ -13,6 +13,23 @@ body {
 /* layout header */
 @import "./layout/header";
 
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.arrow{
+  @include flex-center;
+  width: 63px;
+  font-size: 1.15em;
+  padding-top: 3px;
+}
+.logo {
+  margin: 21px 0px 7px 0px;
+}
+.center{
+  width: 63px;
+}
+
 .img-restaurant {
   position: relative;
   height: 218px;
