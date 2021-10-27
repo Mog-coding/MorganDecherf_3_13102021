@@ -66,11 +66,5 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .button-commande {
-    @include flex-center;
-    margin: auto;
-    margin-top: 36px;
-    height: 50px;
-    width: 186px;
-  }
+ 
   
