@@ -24,10 +24,9 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 67px;
-  margin-bottom: 14px;
-  padding-left: 11px;
-  padding-right: 22px;
+  /*height: 67px;*/
+  margin-bottom: 15px;
+  padding: 12px 22px 13px 11px;
   box-shadow: 0 3px 5px 2px #e6e6e6;
   border-radius: 16px;
   font-size: 1.1em;

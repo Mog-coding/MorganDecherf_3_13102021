@@ -2,7 +2,7 @@
 /*1 abstract*/
 @import "./abstracts/variables", "./abstracts/mixins";
 /*2 base*/
-@import "./base/base";
+@import "./base/base", "./base/font";
 /*3 components*/
 @import "./components/cards-menu", "./components/button-gradient";
 /*4 layout*/
