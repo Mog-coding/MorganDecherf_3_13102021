@@ -1,20 +1,21 @@
 .cards-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 67px;
-    margin-bottom: 14px;
-    padding-left: 11px;
-    padding-right: 22px;
-    font-size: 1.1em;
-    font-weight: bold;
-    &__legende p {
+  @include flex(row, space-between, center);
+  height: 67px;
+  margin-bottom: 14px;
+  padding-left: 11px;
+  padding-right: 22px;
+  box-shadow: 0 3px 5px 2px $fifth-color;
+  border-radius: 16px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: white;
+  &__legende p {
     font-weight: normal;
     font-size: 0.85em;
     margin: 3px 0px 0px 0px;
-    }
-    &__price {
+  }
+  &__price {
     font-size: 0.8em;
     padding-top: 18px;
-    }
   }
+}

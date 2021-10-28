@@ -1,9 +1,20 @@
-.logo {
-  margin: 15px 0px 7px 0px;
-  text-align: center;
+.header {
+  @include flex(row, space-between, stretch);
+  & img {
+    height: 30px;
+    width: 164px;
+    object-fit: contain;
+  }
 }
-header img {
-  height: 30px;
-  width: 164px;
-  object-fit: contain;
+.arrow {
+  @include flex-center;
+  width: 63px;
+  font-size: 1.15em;
+  padding-top: 3px;
+}
+.logo {
+  margin: 21px 0px 7px 0px;
+}
+.center {
+  width: 63px;
 }

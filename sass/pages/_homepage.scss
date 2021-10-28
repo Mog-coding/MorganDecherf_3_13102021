@@ -1,0 +1,58 @@
+/*** HEADER ***/
+.logo {
+  margin: 15px 0px 7px 0px;
+  text-align: center;
+}
+.header img {
+  height: 30px;
+  width: 164px;
+  object-fit: contain;
+}
+
+/************* MAIN ***********/
+/*** SECTION 1 RESERVATION ***/
+.reservation {
+  @include flex(column, space-between, center);
+  height: 205px;
+  padding: 40px 35px;
+  background-color: $fourth-color;
+  & h2,
+  div {
+    text-align: center;
+  }
+  & h2 {
+    margin: 0px 0px;
+  }
+  & div {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+}
+.button-reserver {
+  margin: 0px 0 17px 0;
+  width: 218px;
+}
+
+/*** SECTION 2 STEP ***/
+.section-step h2 {
+  margin: 46px 0px 0px 20px;
+}
+.container-step {
+  @include flex(column, space-between, center);
+  height: 265px;
+  padding: 30px 20px 68px 20px;
+}
+
+/*** SECTION 3 cards-home ***/
+.section-cards-home {
+  background-color: $fourth-color;
+  & h2 {
+    padding: 52px 0px 0px 20px;
+    margin: 0px;
+  }
+}
+.container-cards-home {
+  @include flex(column, space-between, stretch);
+  height: 1058px;
+  padding: 22px 20px 64px 20px;
+}

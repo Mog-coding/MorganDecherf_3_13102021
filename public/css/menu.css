@@ -21,14 +21,18 @@ img {
 /*3 components*/
 .cards-menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 67px;
   margin-bottom: 14px;
   padding-left: 11px;
   padding-right: 22px;
+  box-shadow: 0 3px 5px 2px #e6e6e6;
+  border-radius: 16px;
   font-size: 1.1em;
   font-weight: bold;
+  background-color: white;
 }
 .cards-menu__legende p {
   font-weight: normal;
@@ -40,15 +44,14 @@ img {
   padding-top: 18px;
 }
 
-.style-card-menu {
-  background-color: white;
-  box-shadow: 0 3px 5px 2px #e6e6e6;
-  border-radius: 16px;
-}
-
 .button-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 186px;
   background: linear-gradient(175deg, #ff79da, 50%, #9356dc);
-  border-radius: 30px;
+  border-radius: 23px;
   border: none;
   color: white;
   font-size: 0.9em;
@@ -57,57 +60,16 @@ img {
 }
 
 /*4 layout*/
-.logo {
-  margin: 15px 0px 7px 0px;
-  text-align: center;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
 }
-
-header img {
+.header img {
   height: 30px;
   width: 164px;
   object-fit: contain;
-}
-
-footer {
-  background-color: #353535;
-  padding: 25px 25px 30px 25px;
-}
-
-footer img {
-  height: 18px;
-  width: 98px;
-  object-fit: contain;
-  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
-  margin-bottom: 17px;
-}
-
-.footer-icons {
-  display: inline-block;
-  width: 18px;
-}
-
-footer i {
-  font-size: 0.7em;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-nav a {
-  color: white;
-  margin-bottom: 6px;
-}
-
-/*5 pages*/
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
 }
 
 .arrow {
@@ -127,17 +89,49 @@ header {
   width: 63px;
 }
 
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer img {
+  height: 18px;
+  width: 98px;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
+  margin-bottom: 17px;
+}
+.footer__icons {
+  display: inline-block;
+  width: 18px;
+}
+.footer i {
+  font-size: 0.7em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  color: white;
+  margin-bottom: 7px;
+}
+
+/*5 pages*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .img-restaurant {
   position: relative;
   height: 218px;
   width: 100%;
 }
-
 .img-restaurant img {
-  height: 270px;
-  width: 100%;
   position: absolute;
   z-index: -1;
+  height: 270px;
+  width: 100%;
 }
 
 /********* MAIN *********/
@@ -149,6 +143,7 @@ main {
 
 .container-h1 {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -180,16 +175,13 @@ h2::after {
 .container-cards {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
-.button-commande {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button-commander {
   margin: auto;
   margin-top: 36px;
-  height: 50px;
-  width: 186px;
 }
 
 /*# sourceMappingURL=menu.css.map */

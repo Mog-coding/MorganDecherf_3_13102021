@@ -5,8 +5,8 @@
 @import "./base/base", "./base/font";
 /*3 components*/
 @import "./components/position", "./components/button-gradient",
-  "./components/cards-home", "./components/step";
+  "./components/step", "./components/cards-home", "./components/button-nouveau";
 /*4 layout*/
-@import "./layout/header", "./layout/footer";
+@import "./layout/footer";
 /*5 page*/
 @import "./pages/homepage.scss";

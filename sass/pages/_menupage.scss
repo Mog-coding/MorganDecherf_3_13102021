@@ -1,0 +1,53 @@
+body {
+  font-family: $main-font, sans-serif;
+}
+.img-restaurant {
+  position: relative;
+  height: 218px;
+  width: 100%;
+  & img {
+    position: absolute;
+    z-index: -1;
+    height: 270px;
+    width: 100%;
+  }
+}
+
+/********* MAIN *********/
+main {
+  padding: 33px 12px 83px 11px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 38px 38px 0px 0px;
+}
+.container-h1 {
+  @include flex(row, space-between, baseline);
+  & i {
+    font-size: 1.5em;
+    padding-right: 26px;
+  }
+}
+h1 {
+  font-family: $title-font, cursive;
+  margin: 0px 0px 4px 10px;
+  font-size: 1.67em;
+}
+h2 {
+  font-weight: normal;
+  font-size: 1.05em;
+  margin: 25px 0px 14px 9px;
+  &::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 42px;
+    background-color: $tertiary-color;
+    margin-top: 5px;
+  }
+}
+.container-cards {
+  @include flex(column, flex-start, stretch);
+}
+.button-commander {
+  margin: auto;
+  margin-top: 36px;
+}

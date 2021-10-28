@@ -47,44 +47,18 @@ body {
 }
 
 .button-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 186px;
   background: linear-gradient(175deg, #ff79da, 50%, #9356dc);
-  border-radius: 30px;
+  border-radius: 23px;
   border: none;
   color: white;
   font-size: 0.9em;
   font-weight: bold;
   box-shadow: 3px 5px 7px #c4c4c4;
-}
-
-.cards-home {
-  height: 250px;
-  width: 100%;
-  position: relative;
-  background-color: white;
-  border-radius: 16px;
-  box-shadow: 3px 5px 7px #e6e6e6;
-}
-.cards-home__image {
-  height: 174px;
-  width: 100%;
-  border-radius: 15px 15px 0px 0px;
-}
-.cards-home__container-legend {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-}
-.cards-home__legend-text {
-  margin: 13px 0px 0px 14px;
-}
-.cards-home__legend-text p {
-  font-weight: normal;
-  margin: 4px 0px 0px 0px;
-}
-.cards-home__legend-i {
-  font-size: 1.4em;
-  margin-top: 20px;
-  margin-right: 20px;
 }
 
 .step {
@@ -121,114 +95,35 @@ body {
   color: white;
 }
 
-/*4 layout*/
-.logo {
-  margin: 15px 0px 7px 0px;
-  text-align: center;
+.cards-home {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 3px 5px 7px #e6e6e6;
 }
-
-header img {
-  height: 30px;
-  width: 164px;
-  object-fit: contain;
+.cards-home__image {
+  height: 174px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
 }
-
-footer {
-  background-color: #353535;
-  padding: 25px 25px 30px 25px;
-}
-
-footer img {
-  height: 18px;
-  width: 98px;
-  object-fit: contain;
-  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
-  margin-bottom: 17px;
-}
-
-.footer-icons {
-  display: inline-block;
-  width: 18px;
-}
-
-footer i {
-  font-size: 0.7em;
-}
-
-nav {
+.cards-home__container-legend {
   display: flex;
-  flex-direction: column;
-}
-
-nav a {
-  color: white;
-  margin-bottom: 6px;
-}
-
-/*5 page*/
-/************************* MAIN *************************/
-/*********** SECTION 1 RESERVATION ***********/
-.reservation {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  height: 205px;
-  padding: 40px 35px;
-  background-color: #f6f6f6;
+  font-weight: bold;
 }
-
-.reservation h2,
-.reservation div {
-  text-align: center;
+.cards-home__legend-text {
+  margin: 13px 0px 0px 14px;
 }
-
-.reservation h2 {
-  margin: 0px 0px;
+.cards-home__legend-text p {
+  font-weight: normal;
+  margin: 4px 0px 0px 0px;
 }
-
-.reservation div {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-}
-
-.button-explorer {
-  height: 50px;
-  width: 218px;
-  margin-bottom: 20px;
-}
-
-/*********** SECTION 2 STEP ***********/
-.section-step h2 {
-  margin: 46px 0px 0px 20px;
-}
-
-.container-step {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 265px;
-  padding: 30px 20px 68px 20px;
-}
-
-/*********** SECTION 3 cards-home ***********/
-.section-cards-home {
-  background-color: #f6f6f6;
-}
-
-.section-cards-home h2 {
-  padding: 52px 0px 0px 20px;
-  margin: 0px;
-}
-
-.container-cards-home {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  height: 1058px;
-  padding: 22px 20px 64px 20px;
+.cards-home__legend-i {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .button-nouveau {
@@ -246,6 +141,108 @@ nav a {
   border-radius: 3px;
   font-weight: bold;
   font-size: 0.8em;
+}
+
+/*4 layout*/
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer img {
+  height: 18px;
+  width: 98px;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(5261%) hue-rotate(242deg) brightness(108%) contrast(93%);
+  margin-bottom: 17px;
+}
+.footer__icons {
+  display: inline-block;
+  width: 18px;
+}
+.footer i {
+  font-size: 0.7em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  color: white;
+  margin-bottom: 7px;
+}
+
+/*5 page*/
+/*** HEADER ***/
+.logo {
+  margin: 15px 0px 7px 0px;
+  text-align: center;
+}
+
+.header img {
+  height: 30px;
+  width: 164px;
+  object-fit: contain;
+}
+
+/************* MAIN ***********/
+/*** SECTION 1 RESERVATION ***/
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 205px;
+  padding: 40px 35px;
+  background-color: #f6f6f6;
+}
+.reservation h2,
+.reservation div {
+  text-align: center;
+}
+.reservation h2 {
+  margin: 0px 0px;
+}
+.reservation div {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.button-reserver {
+  margin: 0px 0 17px 0;
+  width: 218px;
+}
+
+/*** SECTION 2 STEP ***/
+.section-step h2 {
+  margin: 46px 0px 0px 20px;
+}
+
+.container-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 265px;
+  padding: 30px 20px 68px 20px;
+}
+
+/*** SECTION 3 cards-home ***/
+.section-cards-home {
+  background-color: #f6f6f6;
+}
+.section-cards-home h2 {
+  padding: 52px 0px 0px 20px;
+  margin: 0px;
+}
+
+.container-cards-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 1058px;
+  padding: 22px 20px 64px 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

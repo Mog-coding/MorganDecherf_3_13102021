@@ -1,6 +1,9 @@
 .button-gradient {
+  @include flex-center;
+  height: 50px;
+  width: 186px;
   background: linear-gradient(175deg, $secondary-color, 50%, $primary-color);
-  border-radius: 30px;
+  border-radius: 23px;
   border: none;
   color: white;
   font-size: 0.9em;

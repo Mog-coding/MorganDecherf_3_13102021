@@ -1,0 +1,14 @@
+.button-nouveau {
+  @include flex-center;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  height: 29px;
+  width: 80px;
+  background-color: $tertiary-color;
+  color: rgb(0, 135, 102);
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
