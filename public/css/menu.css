@@ -18,15 +18,18 @@ img {
   object-fit: cover;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /*3 components*/
 .cards-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /*height: 67px;*/
   margin-bottom: 15px;
-  padding: 12px 22px 13px 11px;
+  padding: 12px 22px 14px 11px;
   box-shadow: 0 3px 5px 2px #e6e6e6;
   border-radius: 16px;
   font-size: 1.1em;
@@ -90,7 +93,7 @@ img {
 
 .footer {
   background-color: #353535;
-  padding: 25px;
+  padding: 25px 25px 27px 25px;
 }
 .footer img {
   height: 18px;
@@ -180,7 +183,7 @@ h2::after {
 
 .button-commander {
   margin: auto;
-  margin-top: 36px;
+  margin-top: 34px;
 }
 
 /*# sourceMappingURL=menu.css.map */

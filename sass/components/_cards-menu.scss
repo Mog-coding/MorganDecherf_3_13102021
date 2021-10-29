@@ -1,8 +1,7 @@
 .cards-menu {
   @include flex(row, space-between, center);
-  /*height: 67px;*/
   margin-bottom: 15px;
-  padding: 12px 22px 13px 11px;     
+  padding: 12px 22px 14px 11px;     
   box-shadow: 0 3px 5px 2px $fifth-color;
   border-radius: 16px;
 
