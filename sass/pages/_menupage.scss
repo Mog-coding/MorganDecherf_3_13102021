@@ -52,11 +52,38 @@ h2 {
 }
 
 
-
-/******************** version MOBILE < 321px ********************/
-/******************** version MOBILE < 601px ********************/
-/******************** version MOBILE intermédiaire < 701px ********************/
-/******************** version TABLETTE > 600px, < 1201px ********************/
-/******************** version MOBILE ET TABLETTE < 1201px ********************/
+/******************** version MOBILE < 350px ********************/
+/******************** version MOBILE < 701px ********************/
+/******************** version TABLETTE > 700px, < 1101px ********************/
+@media (min-width: 701px) and (max-width: 1100px){
+  main {
+    padding: 33px 35px 83px 35px;
+  }
+  h2 {
+   &::after {
+   height: 1px;
+   width: 100%;
+    }
+  }
+  .container-cards {
+    @include flex(row, space-between, stretch);
+    flex-wrap: wrap;
+  }
+  .cards-menu {
+    width: 43%;
+  }
+  .footer {
+    text-align: center;
+  & img {
+    height: 25px;
+    width: 110px;
+    margin-bottom: 25px;
+    }
+  }
+  nav {
+    @include flex(row, space-around, stretch);
+ }
+}
+  /******************** version MOBILE ET TABLETTE < 1201px ********************/
 /*@media (min-width: 601px) and (max-width: 1200px) {
-@media screen and (max-width: 600px) {*/
+ @media screen and (max-width: 600px) { 0  */

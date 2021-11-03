@@ -26,7 +26,7 @@
     -webkit-text-fill-color: transparent;
     /*couleur*/
     position: absolute;
-    top: 0;
+    top: 1px;
     right: -1px;
     bottom: 0;
     left: 0;
@@ -35,7 +35,7 @@
     transform-origin: 50% 0%;
     transform: translateY(35%);
     transition: all 350ms;
-    font-size: 1.03em;
+    font-size: 1.04em;
   }
 }
 /* couleur sans kit
