@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********* IMPORTS *********/
 /*1 abstract*/
 /*2 base*/
@@ -69,7 +70,7 @@ body {
   -webkit-text-fill-color: transparent;
   /*couleur*/
   position: absolute;
-  top: 2px;
+  top: 0;
   right: -1px;
   bottom: 0;
   left: 0;
@@ -293,5 +294,13 @@ nav a {
   height: 1058px;
   padding: 22px 20px 64px 20px;
 }
+
+/******************** version MOBILE < 321px ********************/
+/******************** version MOBILE < 601px ********************/
+/******************** version MOBILE intermédiaire < 701px ********************/
+/******************** version TABLETTE > 600px, < 1201px ********************/
+/******************** version MOBILE ET TABLETTE < 1201px ********************/
+/*@media (min-width: 601px) and (max-width: 1200px) {
+@media screen and (max-width: 600px) {*/
 
 /*# sourceMappingURL=main.css.map */

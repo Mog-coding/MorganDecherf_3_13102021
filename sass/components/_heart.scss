@@ -15,14 +15,18 @@
     content: "\f004";
     position: absolute;
     /*couleur*/
-    background: -webkit-linear-gradient(top, $secondary-color 0%, $primary-color 100%);
+    background: -webkit-linear-gradient(
+      top,
+      $secondary-color 0%,
+      $primary-color 100%
+    );
     background: linear-gradient(top, $secondary-color 0%, $primary-color 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color:transparent;
-    /*couleur*/  
+    -webkit-text-fill-color: transparent;
+    /*couleur*/
     position: absolute;
-    top: 2px;
+    top: 0;
     right: -1px;
     bottom: 0;
     left: 0;
