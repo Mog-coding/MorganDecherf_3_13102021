@@ -63,7 +63,7 @@ body {
 }
 .cards-menu__price {
   font-size: 0.8em;
-  padding-top: 18px;
+  padding: 18px 0 0 10px;
 }
 
 .heart {
@@ -99,6 +99,7 @@ body {
   transform: translateY(35%);
   transition: all 350ms;
   font-size: 1.04em;
+  cursor: pointer;
 }
 
 /* couleur sans kit
@@ -273,8 +274,43 @@ h2::after {
     align-items: stretch;
   }
 }
-/******************** version MOBILE ET TABLETTE < 1201px ********************/
-/*@media (min-width: 601px) and (max-width: 1200px) {
- @media screen and (max-width: 600px) { 0  */
+/******************** version DESKTOP > 1100px **************/
+@media screen and (min-width: 1101px) {
+  #main_wrapper {
+    margin: auto;
+    max-width: 1400px;
+  }
+
+  .img-restaurant {
+    height: 250px;
+  }
+  .img-restaurant img {
+    height: 302px;
+  }
+
+  .container-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .footer {
+    text-align: center;
+  }
+  .footer img {
+    height: 25px;
+    width: 110px;
+    margin-bottom: 25px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+}
+/******************** version MOBILE ET TABLETTE < 1201px **************/
 
 /*# sourceMappingURL=menu.css.map */

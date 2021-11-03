@@ -84,6 +84,32 @@ h2 {
     @include flex(row, space-around, stretch);
  }
 }
-  /******************** version MOBILE ET TABLETTE < 1201px ********************/
-/*@media (min-width: 601px) and (max-width: 1200px) {
- @media screen and (max-width: 600px) { 0  */
+/******************** version DESKTOP > 1100px **************/
+@media screen and (min-width: 1101px) {
+  #main_wrapper {
+    margin: auto;
+    max-width: 1400px;
+  }
+  .img-restaurant {
+    height: 250px;
+    & img {
+      height: 302px;
+    }
+  }
+   .container-sections{
+    @include flex(row, space-around, stretch);
+  }
+  .footer {
+    text-align: center;
+  & img {
+    height: 25px;
+    width: 110px;
+    margin-bottom: 25px;
+    }
+  }
+  nav {
+    @include flex(row, space-around, stretch);
+  }
+}
+/******************** version MOBILE ET TABLETTE < 1201px **************/
+
