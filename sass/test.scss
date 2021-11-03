@@ -1,9 +1,0 @@
-/*1 abstract*/
-@import "./abstracts/variables", "./abstracts/mixins";
-/*2 base*/
-@import "./base/base", "./base/font";
-/*3 components*/
-@import "./components/position", "./components/iconeHeart", "./components/button-gradient",
-  "./components/step", "./components/cards-home", "./components/button-nouveau", "./components/cards-menu";
-/*4 layout*/
-@import "./layout/footer";

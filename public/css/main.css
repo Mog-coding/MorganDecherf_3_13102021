@@ -48,8 +48,46 @@ body {
 
 .heart {
   font-size: 1.4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.heart:hover::after {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.heart::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  position: absolute;
+  /*couleur*/
+  background: -webkit-linear-gradient(top, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(top, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*couleur*/
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transform-origin: 50% 0%;
+  transform: translateY(35%);
+  transition: all 350ms;
+  font-size: 1.03em;
 }
 
+/* couleur sans kit
+.fa-heart{
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(175deg, $secondary-color, 50%, $primary-color);
+}
+*/
 .button-gradient {
   display: flex;
   justify-content: center;
@@ -63,6 +101,11 @@ body {
   font-size: 0.9em;
   font-weight: bold;
   box-shadow: 3px 5px 7px #c4c4c4;
+}
+.button-gradient:hover {
+  filter: brightness(1.07);
+  box-shadow: 2px 4px 7px #828282;
+  cursor: pointer;
 }
 
 .step {
@@ -98,6 +141,9 @@ body {
   background-color: #9356dc;
   color: white;
 }
+.step:hover {
+  background-color: #f5edff;
+}
 
 .cards-home {
   height: 250px;
@@ -125,7 +171,6 @@ body {
   margin: 4px 0px 0px 0px;
 }
 .cards-home__legend-i {
-  font-size: 1.4em;
   margin-top: 20px;
   margin-right: 20px;
 }
