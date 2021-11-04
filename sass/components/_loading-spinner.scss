@@ -1,0 +1,35 @@
+.loading-spinner{
+    @include flex(row, space-around, center);
+    position: fixed; /* prend toute la hauteur*/
+    height: 100%;
+    width: 100%;
+    background-color: $spinner-background;
+    z-index: 2;
+    & .primary{
+        background-color:$primary-color;
+    }
+    & .secondary{
+        background-color:$secondary-color;
+    }
+    & .tertiary{
+        background-color:$tertiary-color;
+    }
+    & .ball{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        z-index: 3;
+        animation: bounce 1s ease infinite;
+    }
+}
+@keyframes bounce {
+    from {
+        top: 110px;
+    }    
+    50%{ 
+        top: 0px;
+    }
+    to{
+        top: 110px;
+    } 
+}

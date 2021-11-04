@@ -53,6 +53,9 @@ body {
   position: relative;
   z-index: 1;
 }
+.heart:hover {
+  color: white;
+}
 .heart:hover::after {
   opacity: 1;
   transform: translateY(0%);
@@ -79,7 +82,7 @@ body {
   transform-origin: 50% 0%;
   transform: translateY(35%);
   transition: all 350ms;
-  font-size: 1.04em;
+  font-size: 1em;
   cursor: pointer;
 }
 
@@ -194,6 +197,46 @@ body {
   font-size: 0.8em;
 }
 
+.loading-spinner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  /* prend toute la hauteur*/
+  height: 100%;
+  width: 100%;
+  background-color: rgba(200, 200, 200, 0.8);
+  z-index: 2;
+}
+.loading-spinner .primary {
+  background-color: #9356dc;
+}
+.loading-spinner .secondary {
+  background-color: #ff79da;
+}
+.loading-spinner .tertiary {
+  background-color: #99e2d0;
+}
+.loading-spinner .ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 3;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  from {
+    top: 110px;
+  }
+  50% {
+    top: 0px;
+  }
+  to {
+    top: 110px;
+  }
+}
 /*4 layout*/
 .footer {
   background-color: #353535;

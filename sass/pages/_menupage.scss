@@ -99,6 +99,9 @@ h2 {
    .container-sections{
     @include flex(row, space-around, stretch);
   }
+  display: flex;
+  justify-content: center;
+  @include flex(row, center);
   .footer {
     text-align: center;
   & img {

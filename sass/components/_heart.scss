@@ -4,6 +4,7 @@
   position: relative;
   z-index: 1;
   &:hover {
+    color: white;
     &::after {
       opacity: 1;
       transform: translateY(0%);
@@ -35,7 +36,7 @@
     transform-origin: 50% 0%;
     transform: translateY(35%);
     transition: all 350ms;
-    font-size: 1.04em;
+    font-size: 1em;
     cursor: pointer;
   }
 }

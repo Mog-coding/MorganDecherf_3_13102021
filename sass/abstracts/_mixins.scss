@@ -4,9 +4,9 @@
   align-items: center;
 }
 
-@mixin flex($flex-direction, $justify-content, $align-items) {
+@mixin flex($flex-direction, $justify-content:baseline, $align-items:baseline) {
   display: flex;
   flex-direction: $flex-direction;
   justify-content: $justify-content;
   align-items: $align-items;
-} ;
+} 
