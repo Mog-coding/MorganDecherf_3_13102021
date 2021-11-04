@@ -13,9 +13,9 @@ body {
   }
 }
 
-/********* MAIN *********/
+/************** MAIN **************/
 main {
-  padding: 29px 12px 83px 11px;
+  padding: 32px 13px 83px 12px;
   background-color: rgb(246, 246, 246);
   border-radius: 38px 38px 0px 0px;
 }
@@ -51,8 +51,8 @@ h2 {
   margin-top: 34px;
 }
 
-/********* Media Queries *********/
-/******************** version TABLETTE et DESKTOP > 700px *****************/
+/************** Media Queries **************/
+/************** version TABLETTE et DESKTOP > 700px **************/
 @media screen and (min-width: 701px) {
   main {
     padding: 33px 35px 83px 35px;
@@ -63,33 +63,17 @@ h2 {
       width: 100%;
     }
   }
-  .footer {
-    text-align: center;
-    & img {
-      height: 25px;
-      width: 110px;
-      margin-bottom: 25px;
-    }
-  }
-  nav {
-    @include flex(row, space-around, stretch);
-  }
 }
-
-/******************** version TABLETTE > 700px, < 1101px *****************/
+/************** version TABLETTE > 700px, < 1101px **************/
 @media (min-width: 701px) and (max-width: 1100px) {
   .container-cards {
     @include flex(row, space-between, stretch);
     flex-wrap: wrap;
   }
-  .cards-menu {
-    width: 43%;
-  }
 }
-
-/******************** version DESKTOP > 1100px **************/
+/************** version DESKTOP > 1100px **************/
 @media screen and (min-width: 1101px) {
-  #main_wrapper {
+  #main-wrapper {
     margin: auto;
     max-width: 1400px;
   }

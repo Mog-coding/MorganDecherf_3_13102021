@@ -1,10 +1,10 @@
-/*** HEADER ***/
+/************** HEADER **************/
 .arrow {
   visibility: hidden;
 }
 
-/************* MAIN ***********/
-/*** SECTION 1 RESERVATION ***/
+/************** MAIN **************/
+/************** SECTION 1 RESERVATION **************/
 .reservation {
   @include flex(column, space-between, center);
   padding: 37px 35px 40px 35px;
@@ -25,16 +25,16 @@
   width: 218px;
 }
 
-/*** SECTION 2 STEP ***/
+/************** SECTION 2 STEP **************/
 .section-step h2 {
   margin: 46px 0px 0px 20px;
 }
 .container-step {
   @include flex(column, space-between, center);
-  padding: 30px 20px 68px 20px;
+  padding: 30px 20px 42px 20px;
 }
 
-/*** SECTION 3 cards-home ***/
+/************** SECTION 3 cards-home **************/
 .section-cards-home {
   background-color: $fourth-color;
   & h2 {
@@ -44,12 +44,16 @@
 }
 .container-cards-home {
   @include flex(column, space-between, stretch);
-  padding: 22px 20px 64px 20px;
+  padding: 22px 20px 43px 20px;
 }
 
-/******************** version MOBILE < 350px ********************/
-/******************** version TABLETTE et DESKTOP > 736px *****************/
-@media screen and (min-width: 760px){
+/************** Media Queries **************/
+/************** version TABLETTE et DESKTOP > 736px **************/
+@media screen and (min-width: 760px) {
+  #main-wrapper {
+    margin: auto;
+    max-width: 1400px;
+  }
   .section-step h2 {
     margin: 46px 0px 0px 30px;
   }
@@ -71,42 +75,4 @@
     flex-wrap: wrap;
     padding: 22px 30px 64px 30px;
   }
-  .cards-home {
-    width: 48%;
-    margin-bottom: 30px;
-  }
 }
-/******************** version TABLETTE > 736px, < 1101px *****************/
-@media (min-width: 760px) and (max-width: 1100px){
-  .step {
-    width: 46%;
-  }
-}
-
-/******************** version DESKTOP > 1100px **************/
-@media screen and (min-width: 1101px) {
-  .step {
-    width: 31%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-/******************** version TABLETTE > 700px, < 1201px ********************/
-/* @media (min-width: 601px) and (max-width: 1200px) */
-
-/******************** version MOBILE < 321px ********************/
-/******************** version MOBILE < 601px ********************/
-/******************** version MOBILE intermédiaire < 701px ********************/
-/******************** version TABLETTE > 600px, < 1201px ********************/
-
-/******************** version MOBILE ET TABLETTE < 1201px ********************/
-/*@media (min-width: 601px) and (max-width: 1200px) {
-@media screen and (max-width: 600px) {*/
