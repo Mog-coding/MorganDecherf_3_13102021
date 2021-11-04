@@ -118,6 +118,7 @@ body {
   position: relative;
   height: 71px;
   min-width: 322px;
+  margin-bottom: 26px;
   border-radius: 22px;
   background-color: #f6f6f6;
   box-shadow: 3px 5px 7px gainsboro;
@@ -151,6 +152,7 @@ body {
   height: 250px;
   width: 100%;
   position: relative;
+  margin-bottom: 18px;
   background-color: white;
   border-radius: 16px;
   box-shadow: 3px 5px 7px #e6e6e6;
@@ -195,6 +197,35 @@ body {
 }
 
 /*4 layout*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.header img {
+  height: 30px;
+  width: 164px;
+  object-fit: contain;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  font-size: 1.15em;
+  padding-top: 3px;
+}
+
+.logo {
+  margin: 21px 0px 7px 0px;
+}
+
+.center {
+  width: 63px;
+}
+
 .footer {
   background-color: #353535;
   padding: 25px 25px 27px 25px;
@@ -225,15 +256,8 @@ nav a {
 
 /*5 page*/
 /*** HEADER ***/
-.logo {
-  margin: 15px 0px 7px 0px;
-  text-align: center;
-}
-
-.header img {
-  height: 30px;
-  width: 164px;
-  object-fit: contain;
+.arrow {
+  visibility: hidden;
 }
 
 /************* MAIN ***********/
@@ -243,20 +267,18 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 205px;
-  padding: 40px 35px;
+  padding: 37px 35px 40px 35px;
   background-color: #f6f6f6;
 }
-.reservation h2,
+.reservation h1 {
+  margin: 0px 0px;
+  text-align: center;
+  margin-bottom: 16px;
+}
 .reservation div {
   text-align: center;
-}
-.reservation h2 {
-  margin: 0px 0px;
-}
-.reservation div {
   font-size: 1.1em;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
 }
 
 .button-reserver {
@@ -274,7 +296,6 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 265px;
   padding: 30px 20px 68px 20px;
 }
 
@@ -292,11 +313,59 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  height: 1058px;
   padding: 22px 20px 64px 20px;
 }
 
 /******************** version MOBILE < 350px ********************/
+/******************** version TABLETTE et DESKTOP > 736px *****************/
+@media screen and (min-width: 760px) {
+  .section-step h2 {
+    margin: 46px 0px 0px 30px;
+  }
+
+  .step {
+    margin: 0 0 26px 15px;
+  }
+
+  .container-step {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 30px 30px 68px 30px;
+  }
+
+  .section-cards-home h2 {
+    padding: 52px 0px 0px 30px;
+  }
+
+  .container-cards-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 22px 30px 64px 30px;
+  }
+
+  .cards-home {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+/******************** version TABLETTE > 736px, < 1101px *****************/
+@media (min-width: 760px) and (max-width: 1100px) {
+  .step {
+    width: 46%;
+  }
+}
+/******************** version DESKTOP > 1100px **************/
+@media screen and (min-width: 1101px) {
+  .step {
+    width: 31%;
+  }
+}
 /******************** version TABLETTE > 700px, < 1201px ********************/
 /* @media (min-width: 601px) and (max-width: 1200px) */
 /******************** version MOBILE < 321px ********************/

@@ -186,7 +186,7 @@ body {
 
 /********* MAIN *********/
 main {
-  padding: 33px 12px 83px 11px;
+  padding: 29px 12px 83px 11px;
   background-color: #f6f6f6;
   border-radius: 38px 38px 0px 0px;
 }
@@ -233,10 +233,9 @@ h2::after {
   margin-top: 34px;
 }
 
-/******************** version MOBILE < 350px ********************/
-/******************** version MOBILE < 701px ********************/
-/******************** version TABLETTE > 700px, < 1101px ********************/
-@media (min-width: 701px) and (max-width: 1100px) {
+/********* Media Queries *********/
+/******************** version TABLETTE et DESKTOP > 700px *****************/
+@media screen and (min-width: 701px) {
   main {
     padding: 33px 35px 83px 35px;
   }
@@ -244,18 +243,6 @@ h2::after {
   h2::after {
     height: 1px;
     width: 100%;
-  }
-
-  .container-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-  }
-
-  .cards-menu {
-    width: 43%;
   }
 
   .footer {
@@ -272,6 +259,20 @@ h2::after {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+  }
+}
+/******************** version TABLETTE > 700px, < 1101px *****************/
+@media (min-width: 701px) and (max-width: 1100px) {
+  .container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .cards-menu {
+    width: 43%;
   }
 }
 /******************** version DESKTOP > 1100px **************/
@@ -294,23 +295,6 @@ h2::after {
     justify-content: space-around;
     align-items: stretch;
   }
-
-  .footer {
-    text-align: center;
-  }
-  .footer img {
-    height: 25px;
-    width: 110px;
-    margin-bottom: 25px;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-  }
 }
-/******************** version MOBILE ET TABLETTE < 1201px **************/
 
 /*# sourceMappingURL=menu.css.map */

@@ -15,7 +15,7 @@ body {
 
 /********* MAIN *********/
 main {
-  padding: 33px 12px 83px 11px;
+  padding: 29px 12px 83px 11px;
   background-color: rgb(246, 246, 246);
   border-radius: 38px 38px 0px 0px;
 }
@@ -51,20 +51,33 @@ h2 {
   margin-top: 34px;
 }
 
-
-/******************** version MOBILE < 350px ********************/
-/******************** version MOBILE < 701px ********************/
-/******************** version TABLETTE > 700px, < 1101px ********************/
-@media (min-width: 701px) and (max-width: 1100px){
+/********* Media Queries *********/
+/******************** version TABLETTE et DESKTOP > 700px *****************/
+@media screen and (min-width: 701px) {
   main {
     padding: 33px 35px 83px 35px;
   }
   h2 {
-   &::after {
-   height: 1px;
-   width: 100%;
+    &::after {
+      height: 1px;
+      width: 100%;
     }
   }
+  .footer {
+    text-align: center;
+    & img {
+      height: 25px;
+      width: 110px;
+      margin-bottom: 25px;
+    }
+  }
+  nav {
+    @include flex(row, space-around, stretch);
+  }
+}
+
+/******************** version TABLETTE > 700px, < 1101px *****************/
+@media (min-width: 701px) and (max-width: 1100px) {
   .container-cards {
     @include flex(row, space-between, stretch);
     flex-wrap: wrap;
@@ -72,18 +85,8 @@ h2 {
   .cards-menu {
     width: 43%;
   }
-  .footer {
-    text-align: center;
-  & img {
-    height: 25px;
-    width: 110px;
-    margin-bottom: 25px;
-    }
-  }
-  nav {
-    @include flex(row, space-around, stretch);
- }
 }
+
 /******************** version DESKTOP > 1100px **************/
 @media screen and (min-width: 1101px) {
   #main_wrapper {
@@ -96,20 +99,7 @@ h2 {
       height: 302px;
     }
   }
-   .container-sections{
-    @include flex(row, space-around, stretch);
-  }
-  .footer {
-    text-align: center;
-  & img {
-    height: 25px;
-    width: 110px;
-    margin-bottom: 25px;
-    }
-  }
-  nav {
+  .container-sections {
     @include flex(row, space-around, stretch);
   }
 }
-/******************** version MOBILE ET TABLETTE < 1201px **************/
-
