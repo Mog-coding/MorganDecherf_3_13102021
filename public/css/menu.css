@@ -77,6 +77,9 @@ body {
   position: relative;
   z-index: 1;
 }
+.heart:hover {
+  color: white;
+}
 .heart:hover::after {
   opacity: 1;
   transform: translateY(0%);
@@ -94,7 +97,7 @@ body {
   -webkit-text-fill-color: transparent;
   /*couleur*/
   position: absolute;
-  top: 1px;
+  top: 0;
   right: -1px;
   bottom: 0;
   left: 0;
@@ -103,7 +106,7 @@ body {
   transform-origin: 50% 0%;
   transform: translateY(35%);
   transition: all 350ms;
-  font-size: 1.04em;
+  font-size: 1.02em;
   cursor: pointer;
 }
 
@@ -182,6 +185,8 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 nav a {
   color: white;
@@ -262,7 +267,8 @@ h2::after {
   margin-top: 34px;
 }
 
-/************** Media Queries **************/
+/* media queries */
+/************** Media queries menu **************/
 /************** version TABLETTE et DESKTOP > 700px **************/
 @media screen and (min-width: 701px) {
   main {

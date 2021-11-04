@@ -26,8 +26,7 @@
   }
 }
 nav {
-  display: flex;
-  flex-direction: column;
+  @include flex(column, flex-start);
   & a {
     color: white;
     margin-bottom: 7px;
