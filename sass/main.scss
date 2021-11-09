@@ -4,12 +4,11 @@
 /*2 base*/
 @import "./base/base", "./base/font";
 /*3 components*/
-@import "./components/position", "./components/heart",
-  "./components/button-gradient", "./components/step", "./components/cards-home",
+@import "./components/position", "./components/heart", "./components/loading-spinner", "./components/button-gradient", "./components/step", "./components/cards-home",
   "./components/button-nouveau";
 /*4 layout*/
 @import "./layout/header", "./layout/footer";
 /*5 page*/
 @import "./pages/homepage.scss";
-
+/* media queries */
 @import "./layout/mediaqueries-home";

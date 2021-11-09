@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********* IMPORTS *********/
 /*1 abstract*/
 /*2 base*/
@@ -92,6 +93,64 @@ body {
     background-image: linear-gradient(175deg, $secondary-color, 50%, $primary-color);
 }
 */
+.loading-spinner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* prend toute la hauteur*/
+  height: 100%;
+  width: 100%;
+  background-color: rgba(180, 180, 180, 0.4);
+  z-index: 2;
+  /*valeur par défaut: 1 */
+  animation: loader 3s;
+  animation-fill-mode: forwards;
+  /* conserve les valeurs de fin: height:0 */
+}
+.loading-spinner .ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 20% 80%;
+  z-index: 3;
+  animation: bounce 1.3s;
+  /* cubic-bezier(.22,-0.11,.14,1.03); */
+  animation-iteration-count: 2;
+  margin: 0 20px;
+}
+.loading-spinner .primary {
+  background: linear-gradient(160deg, white, 20%, #9356dc);
+}
+.loading-spinner .secondary {
+  background: linear-gradient(160deg, white, 20%, #ff79da);
+  animation-delay: 200ms;
+}
+.loading-spinner .tertiary {
+  background: linear-gradient(160deg, white, 20%, #99e2d0);
+  animation-delay: 400ms;
+}
+
+@keyframes loader {
+  99% {
+    z-index: 2;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    /*height: 100% ou height: 0; retire le background */
+    opacity: 0;
+    /* retire les boules */
+  }
+}
+@keyframes bounce {
+  50% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .button-gradient {
   display: flex;
   justify-content: center;
@@ -371,6 +430,7 @@ nav a {
   padding: 22px 20px 43px 20px;
 }
 
+/* media queries */
 /************** Media queries home **************/
 /************** version TABLETTE et DESKTOP > 736px **************/
 @media screen and (min-width: 760px) {

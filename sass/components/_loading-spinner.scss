@@ -1,0 +1,50 @@
+.loading-spinner {
+    @include flex(row, center, center);
+    position: fixed; /* prend toute la hauteur*/
+    height: 100%;
+    width: 100%;
+    background-color: $spinner-background;
+    z-index: 2;     /*valeur par défaut: 1 */
+    animation: loader 3s;
+    animation-fill-mode: forwards;   /* conserve les valeurs de fin: height:0 */
+    & .ball{
+        height: 50px;
+        width: 50px;
+        border-radius: 20% 80%;
+        z-index: 3;
+        animation: bounce 1.3s;  /* cubic-bezier(.22,-0.11,.14,1.03); */
+        animation-iteration-count: 2;
+        margin: 0 20px;
+    }
+    & .primary{
+        background: linear-gradient(160deg, white, 20%, $primary-color);
+    }
+    & .secondary{
+        background: linear-gradient(160deg, white, 20%, $secondary-color);
+        animation-delay: 200ms;
+    }
+    & .tertiary{
+        background:linear-gradient(160deg, white, 20%, $tertiary-color);
+        animation-delay: 400ms;
+    }
+}
+
+@keyframes loader {
+99% {
+    z-index: 2;
+    opacity: 1;
+}
+100% {
+    z-index: -1;      /*height: 100% ou height: 0; retire le background */
+    opacity: 0;     /* retire les boules */
+}
+}
+
+@keyframes bounce {
+    50% {
+        transform: scale(0.1);
+    }    
+    100% {
+        transform: scale(1);
+    } 
+}
