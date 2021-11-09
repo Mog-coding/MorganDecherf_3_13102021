@@ -5,7 +5,7 @@
     width: 100%;
     background-color: $spinner-background;
     z-index: 2;     /*valeur par défaut: 1 */
-    animation: loader 3s forwards;  /* conserve les valeurs de fin: height:0 disparition */
+    animation: loader 3s forwards;  /* conserve les valeurs de fin: height:0 disparition, toujours fixe quand on scroll*/
     & .ball{
         height: 10px;
         width: 10px;
