@@ -15,18 +15,6 @@
     font-weight: 900;
     content: "\f004";
     position: absolute;
-    /*couleur*/
-    background: -webkit-linear-gradient(
-      top,
-      $secondary-color 0%,
-      $primary-color 100%
-    );
-    background: linear-gradient(top, $secondary-color 0%, $primary-color 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /*couleur*/
-    position: absolute;
     top: 0;
     right: -1px;
     bottom: 0;
@@ -38,6 +26,17 @@
     transition: all 350ms;
     font-size: 1.02em;
     cursor: pointer;
+    /*couleur*/
+    background: -webkit-linear-gradient(
+      top,
+      $secondary-color 0%,
+      $primary-color 100%
+    );
+    background: linear-gradient(top, $secondary-color 0%, $primary-color 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*couleur*/
   }
 }
 /* couleur sans kit

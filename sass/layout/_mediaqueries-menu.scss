@@ -33,4 +33,7 @@
     .container-sections {
       @include flex(row, space-around, stretch);
     }
+    .container-cards {
+      border: violet 1px solid;
+    }
   }

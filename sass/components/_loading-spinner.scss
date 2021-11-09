@@ -1,6 +1,6 @@
 .loading-spinner {
     @include flex(row, center, center);
-    position: fixed; /* prend toute la hauteur*/
+    position: fixed; /* prend toute la hauteur, toujours fixe qd on scrolle */
     height: 100%;
     width: 100%;
     background-color: $spinner-background;
