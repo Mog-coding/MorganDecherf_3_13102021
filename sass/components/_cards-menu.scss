@@ -2,7 +2,7 @@
   @include flex(row, flex-start, center);
   position: relative;
   margin-bottom: 15px;
-  padding: 0px 0px 0px 11px; 
+  padding: 0px 0px 0px 11px;
   box-shadow: 0 3px 5px 2px $fifth-color;
   border-radius: 16px;
   background-color: white;
@@ -24,34 +24,32 @@
   }
   &__price {
     font-size: 0.8em;
-    padding: 26px 23px 9px 10px; 
+    padding: 26px 23px 9px 10px;
   }
-  &:hover {
-    &:after {
-    transform: translateX(-1px);
-    transition: all 500ms;
-    width:59px;
-    visibility: visible;
-    }
-  }
-  &:after {
+  &__check {
     @include flex-center;
-    visibility: hidden;
-    width: 0;
-    transform: translateX(0); 
-    animation: tourne 200ms;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f00c";
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    height: 68px;
+    visibility: hidden;     /* cache icone fa */
+    width: 0px;             /* taille 0 */
+    height: 69px;
     background-color: $tertiary-color;
     cursor: pointer;
+    border-radius: 0 16px 16px 0;
+    &__icon {
+      background-color: white;
+      transform: rotate(0);
+    }
+  }
+  &:hover {
+    & .cards-menu__check {
+    transition: all 500ms;
+    width: 60px;              
+    visibility: visible;
+    flex-shrink: 0;
+    }
+    & .cards-menu__check__icon {
+      transform: rotate(360deg);
+      transition: all 500ms;
+    }
   }
   @media (min-width: 701px) and (max-width: 1100px) {
     width: 43%;
@@ -59,8 +57,10 @@
   @media screen and (min-width: 1101px) {
     width: 305px;
   }
-} 
+}
+
 .grow{
   flex-grow: 1;
   width: 10px;
 }
+

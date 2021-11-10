@@ -75,32 +75,32 @@ body {
   font-size: 0.8em;
   padding: 26px 23px 9px 10px;
 }
-.cards-menu:hover:after {
-  transform: translateX(-1px);
-  transition: all 500ms;
-  width: 59px;
-  visibility: visible;
-}
-.cards-menu:after {
+.cards-menu__check {
   display: flex;
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  width: 0;
-  transform: translateX(0);
-  animation: tourne 200ms;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c";
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  height: 68px;
+  /* cache icone fa */
+  width: 0px;
+  /* taille 0 */
+  height: 69px;
   background-color: #99e2d0;
   cursor: pointer;
+  border-radius: 0 16px 16px 0;
+}
+.cards-menu__check__icon {
+  background-color: white;
+  transform: rotate(0);
+}
+.cards-menu:hover .cards-menu__check {
+  transition: all 500ms;
+  width: 60px;
+  visibility: visible;
+  flex-shrink: 0;
+}
+.cards-menu:hover .cards-menu__check__icon {
+  transform: rotate(360deg);
+  transition: all 500ms;
 }
 @media (min-width: 701px) and (max-width: 1100px) {
   .cards-menu {
