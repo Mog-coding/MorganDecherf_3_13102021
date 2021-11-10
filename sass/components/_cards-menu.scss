@@ -1,8 +1,8 @@
 .cards-menu {
-  @include flex(row, space-between, center);
+  @include flex(row, flex-start, center);
   position: relative;
   margin-bottom: 15px;
-  padding: 0px 0px 0px 11px; /* 12px 22px 14px 11px */
+  padding: 0px 0px 0px 11px; 
   box-shadow: 0 3px 5px 2px $fifth-color;
   border-radius: 16px;
   background-color: white;
@@ -24,26 +24,34 @@
   }
   &__price {
     font-size: 0.8em;
-    padding: 26px 23px 9px 10px; /* 18px 0 0 10px */
+    padding: 26px 23px 9px 10px; 
   }
   &:hover {
     &:after {
-      @include flex-center;
-      display:block;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f00c";
-      position: relative;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 2;
-      width: 59px;
-      height: 68px;
-      background-color: $tertiary-color;
-      cursor: pointer;
+    transform: translateX(-1px);
+    transition: all 500ms;
+    width:59px;
+    visibility: visible;
     }
+  }
+  &:after {
+    @include flex-center;
+    visibility: hidden;
+    width: 0;
+    transform: translateX(0); 
+    animation: tourne 200ms;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 68px;
+    background-color: $tertiary-color;
+    cursor: pointer;
   }
   @media (min-width: 701px) and (max-width: 1100px) {
     width: 43%;
@@ -52,3 +60,7 @@
     width: 305px;
   }
 } 
+.grow{
+  flex-grow: 1;
+  width: 10px;
+}

@@ -46,12 +46,11 @@ body {
 .cards-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   margin-bottom: 15px;
   padding: 0px 0px 0px 11px;
-  /* 12px 22px 14px 11px */
   box-shadow: 0 3px 5px 2px #e6e6e6;
   border-radius: 16px;
   background-color: white;
@@ -75,13 +74,21 @@ body {
 .cards-menu__price {
   font-size: 0.8em;
   padding: 26px 23px 9px 10px;
-  /* 18px 0 0 10px */
 }
 .cards-menu:hover:after {
+  transform: translateX(-1px);
+  transition: all 500ms;
+  width: 59px;
+  visibility: visible;
+}
+.cards-menu:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: block;
+  visibility: hidden;
+  width: 0;
+  transform: translateX(0);
+  animation: tourne 200ms;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f00c";
@@ -91,7 +98,6 @@ body {
   bottom: 0;
   left: 0;
   z-index: 2;
-  width: 59px;
   height: 68px;
   background-color: #99e2d0;
   cursor: pointer;
@@ -105,6 +111,11 @@ body {
   .cards-menu {
     width: 305px;
   }
+}
+
+.grow {
+  flex-grow: 1;
+  width: 10px;
 }
 
 .heart {
