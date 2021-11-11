@@ -4,7 +4,9 @@
   "description": "P3 Ohmyfood",
   "main": "index.js",
   "scripts": {
-     "sass": "sass --watch ./sass:public/css --style expanded"
+     "sass": "sass --watch ./sass:public/css --style expanded",
+     "prefixHome": "postcss ./public/css/main.css --use autoprefixer -d ./public/css/prefixed/",
+     "prefixMenu": "postcss ./public/css/menu.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
