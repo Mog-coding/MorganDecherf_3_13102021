@@ -1,5 +1,6 @@
 .cards-menu {
   @include flex(row, flex-start, center);
+  animation: fondu 700ms both;
   position: relative;
   margin-bottom: 15px;
   padding: 0px 0px 0px 11px;
@@ -56,6 +57,11 @@
       transform: rotate(360deg);
     }
   }
+  @for $i from 1 through 4 {
+    &--#{$i} {
+      animation-delay: 200ms * $i;
+    }
+  }
   @media (min-width: 701px) and (max-width: 1100px) {
     width: 43%;
   }
@@ -67,4 +73,18 @@
 .grow {
   flex-grow: 1;
   width: 10px;
+}
+
+@keyframes fondu {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

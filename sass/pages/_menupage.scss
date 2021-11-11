@@ -43,10 +43,10 @@ h2 {
     margin-top: 5px;
   }
 }
-.container-cards {
-  @include flex(column, flex-start, stretch);
-}
 .button-commander {
   margin: auto;
   margin-top: 34px;
+}
+.container-cards {
+  @include flex(column, flex-start, stretch);
 }

@@ -48,6 +48,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  animation: fondu 700ms both;
   position: relative;
   margin-bottom: 15px;
   padding: 0px 0px 0px 11px;
@@ -109,6 +110,18 @@ body {
 .cards-menu:hover .cards-menu__check__icon {
   transform: rotate(360deg);
 }
+.cards-menu--1 {
+  animation-delay: 200ms;
+}
+.cards-menu--2 {
+  animation-delay: 400ms;
+}
+.cards-menu--3 {
+  animation-delay: 600ms;
+}
+.cards-menu--4 {
+  animation-delay: 800ms;
+}
 @media (min-width: 701px) and (max-width: 1100px) {
   .cards-menu {
     width: 43%;
@@ -125,6 +138,19 @@ body {
   width: 10px;
 }
 
+@keyframes fondu {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .heart {
   font-size: 1.4em;
   font-weight: bold;
@@ -308,16 +334,16 @@ h2::after {
   margin-top: 5px;
 }
 
+.button-commander {
+  margin: auto;
+  margin-top: 34px;
+}
+
 .container-cards {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-}
-
-.button-commander {
-  margin: auto;
-  margin-top: 34px;
 }
 
 /* media queries */
