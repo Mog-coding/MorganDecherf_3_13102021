@@ -1,36 +1,36 @@
 /************** Media queries menu **************/
 /************** version TABLETTE et DESKTOP > 700px **************/
 @media screen and (min-width: 701px) {
-    main {
-      padding: 33px 35px 83px 35px;
-    }
-    h2 {
-      &::after {
-        height: 1px;
-        width: 100%;
-      }
+  main {
+    padding: 33px 35px 83px 35px;
+  }
+  h2 {
+    &::after {
+      height: 1px;
+      width: 100%;
     }
   }
-  /************** version TABLETTE > 700px, < 1101px **************/
-  @media (min-width: 701px) and (max-width: 1100px) {
-    .container-cards {
-      @include flex(row, space-between, stretch);
-      flex-wrap: wrap;
+}
+/************** version TABLETTE > 700px, < 1101px **************/
+@media (min-width: 701px) and (max-width: 1100px) {
+  .container-cards {
+    @include flex(row, space-between, stretch);
+    flex-wrap: wrap;
+  }
+}
+/************** version DESKTOP > 1100px **************/
+@media screen and (min-width: 1101px) {
+  #main-wrapper {
+    margin: auto;
+    max-width: 1400px;
+  }
+  .img-restaurant {
+    height: 250px;
+    & img {
+      height: 302px;
     }
   }
-  /************** version DESKTOP > 1100px **************/
-  @media screen and (min-width: 1101px) {
-    #main-wrapper {
-      margin: auto;
-      max-width: 1400px;
-    }
-    .img-restaurant {
-      height: 250px;
-      & img {
-        height: 302px;
-      }
-    }
-    .container-sections {
-      @include flex(row, space-around, stretch);
-    }
+  .container-sections {
+    @include flex(row, space-around, stretch);
   }
+}

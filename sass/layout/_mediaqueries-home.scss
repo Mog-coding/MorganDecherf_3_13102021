@@ -1,29 +1,29 @@
 /************** Media queries home **************/
 /************** version TABLETTE et DESKTOP > 736px **************/
 @media screen and (min-width: 760px) {
-    #main-wrapper {
-      margin: auto;
-      max-width: 1400px;
-    }
-    .section-step h2 {
-      margin: 46px 0px 0px 30px;
-    }
-    .step {
-      margin: 0 0 26px 15px;
-    }
-    .container-step {
-      @include flex(row, space-between, stretch);
-      flex-wrap: wrap;
-      padding: 30px 30px 68px 30px;
-    }
-    .section-cards-home {
-      & h2 {
-        padding: 52px 0px 0px 30px;
-      }
-    }
-    .container-cards-home {
-      @include flex(row, space-between, stretch);
-      flex-wrap: wrap;
-      padding: 22px 30px 64px 30px;
+  #main-wrapper {
+    margin: auto;
+    max-width: 1400px;
+  }
+  .section-step h2 {
+    margin: 46px 0px 0px 30px;
+  }
+  .step {
+    margin: 0 0 26px 15px;
+  }
+  .container-step {
+    @include flex(row, space-between, stretch);
+    flex-wrap: wrap;
+    padding: 30px 30px 68px 30px;
+  }
+  .section-cards-home {
+    & h2 {
+      padding: 52px 0px 0px 30px;
     }
   }
+  .container-cards-home {
+    @include flex(row, space-between, stretch);
+    flex-wrap: wrap;
+    padding: 22px 30px 64px 30px;
+  }
+}

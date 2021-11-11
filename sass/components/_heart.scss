@@ -26,27 +26,14 @@
     transition: all 350ms;
     font-size: 1.02em;
     cursor: pointer;
-     /*couleur icon FA*/
-     color: transparent;
-     background-clip: text;
-     background-image: linear-gradient(175deg, $secondary-color, 50%, $primary-color);
-  }
-}
-/* couleur sans kit
-.fa-heart{
+    /*couleur icon FA*/
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(175deg, $secondary-color, 50%, $primary-color);
-}
-*/
-/*
-    background: -webkit-linear-gradient(
-      top,
-      $secondary-color 0%,
-      $primary-color 100%
+    background-image: linear-gradient(
+      175deg,
+      $secondary-color,
+      50%,
+      $primary-color
     );
-    background: linear-gradient(top, $secondary-color 0%, $primary-color 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-*/
+  }
+}
