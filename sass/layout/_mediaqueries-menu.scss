@@ -30,7 +30,7 @@
       height: 302px;
     }
   }
-  .container-sections {
+  .container-articles{
     @include flex(row, space-around, stretch);
   }
 }

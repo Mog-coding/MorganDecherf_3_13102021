@@ -438,7 +438,7 @@ h2::after {
     height: 302px;
   }
 
-  .container-sections {
+  .container-articles {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
